@@ -7,7 +7,8 @@ import {
   NotFoundException,
   Param,
   Patch,
-  Post, UseGuards,
+  Post,
+  UseGuards,
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
@@ -16,7 +17,7 @@ import { CreateProductDto } from './dto/create-product.dto';
 import { ProductService } from './product.service';
 import { PRODUCT_NOT_FOUND_ERROR } from './product.constants';
 import { IdValidationPipe } from '../pipes/id-validation.pipe';
-import {JwtAuthGuard} from "../auth/guards/jwt.guard";
+import { JwtAuthGuard } from '../auth/guards/jwt.guard';
 
 @Controller('product')
 export class ProductController {

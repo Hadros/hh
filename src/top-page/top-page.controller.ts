@@ -75,7 +75,7 @@ export class TopPageController {
     return this.topPageService.findByText(text);
   }
 
-  @Cron(CronExpression.EVERY_5_SECONDS, { name: 'test' })
+  /*Cron(CronExpression.EVERY_HOUR, { name: 'test' })
   async test() {
     Logger.log('Cron!');
     //const job = this.schedulerRegistry.getCronJob('test');
@@ -86,8 +86,8 @@ export class TopPageController {
       page.hh = hhData;
       await this.sleep();
       await this.topPageService.update(page._id, page);
-    }*/
-  }
+    }
+  }*/
 
   sleep() {
     return new Promise<void>((resolve, reject) => {

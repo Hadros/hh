@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ReviewService } from './review.service';
-import {getModelToken} from "nestjs-typegoose";
-import {Types} from "mongoose";
+import { getModelToken } from 'nestjs-typegoose';
+import { Types } from 'mongoose';
 
 describe('ReviewService', () => {
   let service: ReviewService;

@@ -1,4 +1,4 @@
-import {DynamicModule, Global, Module, Provider} from '@nestjs/common';
+import { DynamicModule, Global, Module, Provider } from '@nestjs/common';
 import { TelegramService } from './telegram.service';
 import { ITelegramModuleAsyncOptions } from './telegram.interface';
 import { TELEGRAM_MODULE_OPTIONS } from './telegram.constants';
